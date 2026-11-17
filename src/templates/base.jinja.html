@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-    <head>
-        <link rel="icon" type="image/png" href="/static/favicon.png">
-        <meta name="theme-color" content="#f5ede4">
-        <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=5,user-scalable=yes">
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
-        <meta charset="utf-8">
-        <title>Hannah Baldwin's personal site</title>
-        <style>
-        @import url(/static/main.css);
-        </style>
-    </head>
-    <body>
-        <div id="nav-motif-container">
-            <img alt="Thalassiosira aestivalis" id="nav-motif" src="/static/img/thalassiosira-motif-textured.svg" />
-        </div>
-        <nav>
-            <img alt="Thalassiosira aestivalis" id="nav-motif-small" src="/static/img/thalassiosira-motif-textured.svg" />
-            <div class="inline-text-list">
-                <a href="/">Home</a>
-                <a href="https://github.com/hannahxl32">GitHub</a>
-                <a href="https://orcid.org/0009-0000-4611-8758">OrcID</a>
-                
-            </div>
-        </nav>
-        
+<head>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <meta name="theme-color" content="#f5ede4">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=5,user-scalable=yes">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <meta charset="utf-8">
+    <title>{% block title %}IndentationError{% endblock %}</title>
+    <style>
+    @import url(/static/main.css);
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a class="ie-logo" href="https://indentationerror.net/">IndentationError</a>
+</nav>
+
 {% block content %}
 <main>
     <span class="letterhead-vertical-space"></span>
@@ -36,13 +29,16 @@
 {% endblock %}
 
         <footer>
-            <img alt="Thalassionema nitzschioides" id="footer-motif" src="/static/img/thalassionema-motif-textured.svg" />
-            <div class="inline-text-list">
-                <span>&copy; Hannah Baldwin MMXXVI</span> <span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-NC-SA 4.0</a></span>
-            </div>
-            <div class="inline-text-list">
-                <span>For all enquiries: <a href="mailto:change.me.to.contact.if.you.are.human@hannahbaldwin.net">contact@hannahbaldwin.net</a></span>
-            </div>
+            <p>Mae'r rhwydwaith IndentationError yn grwp o wasanaethau rhwydwaith a gynhelir yn annibynnol gan Hannah a'i ffrindiau. Nid oes unrhyw wasanaethau masnachol ar gael ar ein rhwydwaith.</p>
+            <p>The IndentationError network is a group of independently hosted web and network services from Hannah and friends. No commercial offerings are avaliable on this network.</p>
+            <p>Am bob ymholiad cysylltwch a <a href="mailto:contact@hannahbaldwin.net">contact@hannahbaldwin.net</a></p>
+            <p>For any enquiries please contact <a href="mailto:contact@hannahbaldwin.net">contact@hannahbaldwin.net</a></p>
+            <p>
+                <div class="inline-text-list">
+                    <span>&copy; <a href="https://hxl32.net">Hannah Baldwin</a> MMXIX-MMXXVI</span> <span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-NC-SA 4.0</a></span> <br /><span>hxl32/indentationerror-net:{% include "version_string.txt" %}</span>
+                </div>
+            </p>
         </footer>
-    </body>
+
+</body>
 </html>

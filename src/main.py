@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from werkzeug.middleware.proxy_fix import ProxyFix
 import os
 
@@ -16,7 +16,7 @@ def not_found_error_handler(e):
 @app.route("/index")
 @app.route("/index.html")
 def home_screen():
-    return render_template("index.jinja.html")
+    return render_template("index.jinja.html", client_ip=request.remote_addr)
 
 if __name__ == "__main__":
     app.run()

@@ -1,5 +1,5 @@
 # Version file, generated during container build
-/src/static/version.txt
+/src/templates/version_string.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

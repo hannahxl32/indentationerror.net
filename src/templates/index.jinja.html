@@ -1,33 +1,28 @@
 {% extends "base.jinja.html" %}
 
-{% block title %}Hannah's personal site{% endblock %}
-        
+{% block title %}IndentationError{% endblock %}
+
 {% block content %}
 <main>
-    <h1>Hannah Baldwin</h1>
-    <p>
-        Shwmae! I'm a Research Software Engineer based at the UK's National Oceanography Centre. My research interests include embedded computing, computer vision and bioinformatics. I'm currently working on real-time organism identification and tracking for autonomous undersea vehicles, alongside shipboard systems for rapid, automated plankton identification.
-    </p>
-
-    <!--<h2>Quick links to other places</h2>
+    <h1>Croeso i IndentationError!</h1>
+    
+    <p>Mae dri gweinydd wedi'u llwybro'n gyhoeddus yn y rhwydwaith:</p>
     <ul>
-        <li><a href="https://github.com/hannahxl32">github.com/hannahxl32</a></li>
-        <li><a href="https://orcid.org/0009-0000-4611-8758">orcid.org/0009-0000-4611-8758</a></li>
-    </ul>-->
+        <li><a href="https://gateway.rack.indentationerror.net">gateway.rack.indentationerror.net</a></li>
+        <li><a href="https://main.rack.indentationerror.net">main.rack.indentationerror.net</a> [IPv6 yn unig]</li>
+        <li><a href="https://main.akamai.indentationerror.net">main.akamai.indentationerror.net</a></li>
+    </ul>
+    <p>Cyferiad IP eich: {{ client_ip }}</p>
+
+    <h1>Welcome to IndentationError!</h1>    
+    <p>There are three publicly routed servers in the network:</p>
+    <ul>
+        <li><a href="https://gateway.rack.indentationerror.net">gateway.rack.indentationerror.net</a></li>
+        <li><a href="https://main.rack.indentationerror.net">main.rack.indentationerror.net</a> [IPv6 yn unig]</li>
+        <li><a href="https://main.akamai.indentationerror.net">main.akamai.indentationerror.net</a></li>
+    </ul>
+    <p>Your IP address: {{ client_ip }}</p>
 </main>
-<div class="no-padding-content">
-    <div class="two-column">
-        <div class="left-align">
-            <h2>Particle Imager for Plankton in the Environment</h2>
-            <p>The PIPE is an almost fully 3D-printable pumped fluid microscope targeting particles in the range of 10-500 micron. As designed, it requires <strong><em>zero</em></strong> specialist components, with everything being either 3D-printable, readily avalaible to purchase on sites like eBay, or quickly made with a hacksaw and drill.</p>
-            <p>Download full schematics to build your own at <a href="https://github.com/hannahxl32/pipe">https://github.com/hannahxl32/pipe</a>, or <a href="/pipe">read more here</a>.</p>
-        </div>
-        <div class="right-align">
-            <p><img alt="View of the printable parts of PIPE in Blender" src="/static/content/pipe/model_view.jpg"></p>
-        </div>
-    </div>
-</div>
 {% endblock %}
-            
-        
+
 
